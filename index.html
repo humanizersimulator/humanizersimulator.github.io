@@ -4,107 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Friend Simulator</title>
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Montserrat+Alternates:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Montserrat', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-    header {
-      background-color: rgb(7, 94, 84);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-      object-fit: cover;
-    }
-    header h1 {
-      margin: 0;
-      font-family: 'Montserrat Alternates', Arial, sans-serif;
-      font-weight: 600;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-family: 'Montserrat Alternates', Arial, sans-serif;
-      font-weight: 400;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #333;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      padding: 20px;
-      max-width: 1200px;
-      margin: 20px auto;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .features {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .feature {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      background-color: #f4f4f4;
-    }
-    .feature h3 {
-      margin: 0 0 10px;
-      color: rgb(7, 94, 84);
-      font-weight: 600;
-    }
-    .feature p {
-      margin: 0;
-      font-weight: 400;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .cta a img {
-      width: 200px;
-      height: auto;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: rgb(7, 94, 84);
-      color: white;
-      margin-top: 20px;
-      font-weight: 400;
-    }
-    #privacy-policy, #terms-conditions, #contact {
-      display: none;
-    }
-  </style>
-  <script>
-    function showPage(pageId) {
-      document.querySelectorAll('.section').forEach(section => section.style.display = 'none');
-      document.getElementById(pageId).style.display = 'block';
-    }
-  </script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -118,91 +19,13 @@
     </div>
   </header>
   <nav>
-    <a href="#" onclick="showPage('features')">Features</a>
-    <a href="#" onclick="showPage('privacy-policy')">Privacy Policy</a>
-    <a href="#" onclick="showPage('terms-conditions')">Terms & Conditions</a>
-    <a href="#" onclick="showPage('contact')">Contact</a>
+    <a href="features.html">Features</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-conditions.html">Terms & Conditions</a>
+    <a href="contact.html">Contact</a>
   </nav>
-  <div class="section" id="features">
-    <h2>Features</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Realistic Personas</h3>
-        <p>Create lifelike AI versions of yourself or your friends. Relive moments, reimagine conversations, and enjoy meaningful or playful interactions.</p>
-      </div>
-      <div class="feature">
-        <h3>Talk to Your AI Self</h3>
-        <p>Gain a unique perspective on your personality by talking to your AI self. Perfect for self-reflection or simply having fun.</p>
-      </div>
-      <div class="feature">
-        <h3>Endless Fun with AI Friends</h3>
-        <p>Simulate your friends’ personas and create limitless conversations. Laugh, explore, or enjoy fictional scenarios together.</p>
-      </div>
-      <div class="feature">
-        <h3>Deep Insights into Communication</h3>
-        <p>Experience AI that mirrors tone, style, and personality. Learn how different people express themselves in unique ways.</p>
-      </div>
-      <div class="feature">
-        <h3>Relive Past Conversations</h3>
-        <p>Upload chat histories to bring old conversations back to life with an AI that feels familiar and nostalgic.</p>
-      </div>
-      <div class="feature">
-        <h3>Private and Secure</h3>
-        <p>Your data is processed securely, and privacy is always a top priority. Enjoy full creative freedom with peace of mind.</p>
-      </div>
-    </div>
-  </div>
-  <div class="section" id="privacy-policy">
-    <h2>Privacy Policy</h2>
-    <p><strong>Last Updated:</strong> 10.01.2025</p>
-    <p>AI Friend Simulator ("we," "our," or "us") values your privacy. This policy outlines the information we collect, how we utilize it, and the measures we employ to safeguard it.</p>
-    <h3>1. Information We Collect</h3>
-    <ul>
-      <li>Name, email address, and Google ID during Google sign-in.</li>
-      <li>No sensitive data is collected.</li>
-    </ul>
-    <h3>2. Permissions</h3>
-    <ul>
-      <li>Storage access is required for importing text files.</li>
-    </ul>
-    <h3>3. How We Use Your Data</h3>
-    <ul>
-      <li>Text data is transmitted to the OpenAI API for summarization and persona emulation.</li>
-      <li>Names, email addresses, and Google IDs are retained solely for user consent purposes.</li>
-    </ul>
-    <h3>4. Data Storage</h3>
-    <ul>
-      <li>Text data remains on your device. Consent-related data is securely stored.</li>
-    </ul>
-    <h3>5. OpenAI API Data Retention</h3>
-    <ul>
-      <li>When utilizing OpenAI's API, the data provided is retained temporarily. By default, OpenAI retains API inputs and outputs for up to 30 days to monitor for abuse and ensure service integrity. After this period, the data is deleted unless legal obligations necessitate its retention.</li>
-    </ul>
-    <h3>6. Third-Party Services</h3>
-    <ul>
-      <li>We utilize Firebase for application services and the OpenAI API for text processing.</li>
-    </ul>
-    <h3>7. Data Retention</h3>
-    <ul>
-      <li>Consent data is retained as long as necessary and securely deleted when no longer required.</li>
-    </ul>
-    <h3>8. Notifications</h3>
-    <ul>
-      <li>The application may transmit notifications to users.</li>
-    </ul>
-    <h3>9. Compliance</h3>
-    <ul>
-      <li>We adhere to the General Data Protection Regulation (GDPR).</li>
-    </ul>
-  </div>
-  <div class="section" id="terms-conditions">
-    <h2>Terms and Conditions</h2>
-    <p><strong>Last Updated:</strong> 10.01.2025</p>
-    <p>Welcome to AI Friend Simulator ("we," "our," or "us"). By downloading, accessing, or using our application, you acknowledge your agreement to these Terms and Conditions. Please review them thoroughly before utilizing the app.</p>
-    <h3>1. Acceptance of Terms</h3>
-    <p>By using AI Friend Simulator, you agree to be bound by these Terms and any applicable laws and regulations. If you disagree with these Terms, you must stop using the application immediately.</p>
-    <h3>2. App Usage</h3>
-    <p>AI Friend Simulator enables users to simulate personas based on provided text or chat exports. You are responsible for ensuring that the data you upload complies with all applicable laws and third-party rights. The app is intended for general audiences and is not specifically designed for children.</p>
-    <h3>3. User Accounts</h3>
-    <ul>
-      <li>To access certain features, you must authenticate using Google
+  <footer>
+    <p>&copy; 2025 AI Friend Simulator. All rights reserved.</p>
+  </footer>
+</body>
+</html>
